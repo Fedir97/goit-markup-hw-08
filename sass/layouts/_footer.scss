@@ -1,0 +1,213 @@
+/*footer*/
+
+.logo2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.17;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+    color: var(--additional-color);
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: var(--phone-color);
+    padding: 60px 0;
+
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-address {
+    display: flex;
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        flex-direction: column;
+    }
+}
+
+.information {
+    justify-content: center;
+    margin-left: 0;
+
+    & a:hover {
+        color: var(--additional-color);
+
+    }
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+}
+
+.class-address-main {
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.class-address {
+    margin-bottom: 9px;
+}
+
+.logo-mainer {
+    color: white;
+}
+
+.reference {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    flex-direction: column;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-mail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    flex-direction: column;
+    margin-bottom: 9px;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*Дополнительный Адресс*/
+.additional-address {
+    margin-left: 70px;
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        text-align: center;
+        padding-bottom: 60px;
+        margin-left: 0;
+    }
+}
+
+.address-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 12px;
+    margin-bottom: 0;
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        text-align: center;
+    }
+}
+
+.address-apps {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.address-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:last-child {
+        margin-right: 0px;
+
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--additional-color);
+
+    }
+}
+
+.address-icons {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--additional-color);
+
+    }
+}
+
+/*Окно-для-рользователя*/
+
+.user-window {
+    margin-left: 93px;
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        text-align: center;
+        margin-left: 0px;
+    }
+}
+
+.text-form {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+
+}
+
+.input-list {
+    margin-top: 20px;
+}
+
+.btn-form {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-left: 12px;
+}
+
+.icon-btn {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    margin-left: 10px;
+    transform: translateY(6px);
+}
+
+.input-form {
+    width: 358px;
+    height: 50px;
+    background-color: var(--phone-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        margin-bottom: 20px;
+    }
+}

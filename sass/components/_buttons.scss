@@ -1,0 +1,88 @@
+.btn {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    outline: none;
+    border: 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    height: 48px;
+    width: 200px;
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--additional-color);
+    color: white;
+    border: none;
+
+    &:hover {
+        background-color: #188CE8;
+    }
+
+    &-form {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        margin-left: 12px;
+    }
+}
+
+.close-button {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-17%, 17%);
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+
+
+    &:hover {
+        fill: var(--additional-color);
+    }
+
+    &-icon {
+        width: 11px;
+        height: 11px;
+    }
+
+}
+
+/*portfolio-buttons*/
+
+.btn-current {
+    font-size: 16px;
+    line-height: 1.6;
+    Letter-spacing: 0.03em;
+    color: var(--type-color);
+    font-weight: 500;
+    font-family: inherit;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    border-color: #F5F4FA;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--additional-color);
+        color: white;
+    }
+}
+
+.btn-current--color {
+    background-color: var(--additional-color);
+    color: white;
+}

@@ -1,0 +1,58 @@
+.list {
+    list-style: none;
+    margin: 0;
+
+}
+
+.btn-list {
+    display: flex;
+    justify-content: center;
+
+    & .button-type {
+        margin-left: 8px;
+    }
+}
+
+.input-list {
+    margin-top: 20px;
+}
+
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+
+
+    & .marks {
+        @media screen and (min-width:768px) {
+            flex-basis: 40%;
+            padding-bottom: 30px;
+            padding-left: 30px;
+
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-right: 30px;
+        }
+    }
+
+    & .marks:last-child {
+        margin-right: 0px;
+    }
+
+    @media screen and (min-width:480px) {
+        display: block;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        display: flex;
+        margin-right: -30px;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        justify-content: center;
+        margin-right: -30px;
+    }
+}
