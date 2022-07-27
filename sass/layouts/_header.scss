@@ -76,6 +76,10 @@
         background-color: var(--additional-color);
         bottom: -33px;
         border-radius: 2px;
+
+        @media screen and (min-width:468px) and (max-width:1199px) {
+            bottom: -43px;
+        }
     }
 
     &--active {
@@ -114,7 +118,7 @@
 
     @media screen and (min-width:768px) and (max-width:1199px) {
         display: block;
-        margin-left: 84px
+        margin-left: 74px
     }
 
     @media screen and (min-width:1200px) {
@@ -141,12 +145,21 @@
 
     fill: var(--mini-calor);
     transition: fill 250ms;
+
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 10px;
+        height: 14px;
+    }
 }
 
 .list__icons {
     margin-right: 10px;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-right: 8px;
+    }
 }
 
 .contacts-list__mail {
@@ -155,6 +168,11 @@
     fill: var(--mini-calor);
     transition: fill 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 14px;
+        height: 10px;
+    }
 }
 
 .contacts-list__link1 {

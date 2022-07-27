@@ -214,14 +214,18 @@
                     <h2 class="work">Чем мы занимаемся</h2>
                     <ul class="photos list">
                         <li class="work-photos">
-                            <img class="img" src="./image/first.jpg" alt="work image" width="370" />
+                            <img srcset="./image/first.jpg 1px, ./image/first@2x_desc.jpg 2x " src="./image/first.jpg"
+                                alt="work image" width="370" />
                             <p class="photo-description">Десктопные приложения</p>
                         </li>
-                        <li class="work-photos"><img class="img" src="./image/second.jpg" alt="work image"
-                                width="370" />
+                        <li class="work-photos">
+                            <img srcset="./image/second.jpg 1x, ./image/second@2x_desc.jpg 2x" class="img"
+                                src="./image/second.jpg" alt="work image" width="370" />
                             <p class="photo-description ">Мобильные приложения</p>
                         </li>
-                        <li class="work-photos"><img class="img" src="./image/third.jpg" alt="work image" width="370" />
+                        <li class="work-photos">
+                            <img srcset="./image/third.jpg 1x./image/third@2x_desc.jpg 2x" src="./image/third.jpg"
+                                alt="work image" width="370" />
                             <p class="photo-description ">Дизайнерские решения</p>
                         </li>
                     </ul>
@@ -234,7 +238,22 @@
             <div class="container">
                 <h2 class="team team-title">Наша команда</h2>
                 <ul class="card-set list">
-                    <li class="company"><img class="members" src="./image/two.jpg" alt="Игорь Демьяненко" width="270" />
+                    <li class="company">
+                        <picture>
+                            <source media="(min-width:1200px)"
+                                srcset="./team-images/one_desc.jpg  1x, ./team-images/one@2x_desc.jpg 2x"
+                                type="image/jpeg" />
+
+                            <source media="(min-width:786px)"
+                                srcset="./team-images/one_lap.jpg  1x, ./team-images/one@2x_lap.jpg 2x"
+                                type="image/jpeg" />
+
+                            <source media="(max-width:767px)"
+                                srcset="./team-images/one_tel.jpg  1x, ./team-images/one@2x_tel.jpg 2x"
+                                type="image/jpeg" />
+                            <img src="./team-images/one_tel.jpg" alt="Игорь Демьяненко" width="450" height="460" />
+                        </picture>
+
                         <div class="card-style">
                             <h3 class="name">Игорь Демьяненко</h3>
                             <p class="job" lang="en">Product Designer</p>
@@ -279,7 +298,22 @@
                         </div>
                     </li>
 
-                    <li class="company"><img class="members" src="./image/three.jpg" alt="Ольга Репина" width="270" />
+                    <li class="company">
+                        <picture>
+                            <source media="(min-width:1200px)"
+                                srcset="./team-images/two_desc.jpg 1x, ./team-images/two@2x_desc.jpg 2x"
+                                type="image/jpg" />
+
+                            <source media=" (min-width:786px)"
+                                srcset="./team-images/two_lap.jpg 1x, ./team-images/two@2x_lap.jpg 2x"
+                                type="image/jpg" />
+
+                            <source media="(max-width:767px)"
+                                srcset="./team-images/two_tel.jpg 1x, ./team-images/two@2x_tel.jpg 2x"
+                                type="image/jpg" />
+                            <img srcset="" src="./team-images/two-tel.jpg" alt="Ольга Репина" width="450" />
+                        </picture>
+
                         <div class="card-style">
                             <h3 class="name">Ольга Репина</h3>
                             <p class="job" lang="en">Frontend Developer</p>
@@ -323,7 +357,23 @@
                         </div>
                     </li>
 
-                    <li class="company"><img class="members" src="./image/four.jpg" alt="Николай Тарасов" width="270" />
+                    <li class="company">
+                        <picture>
+                            <source media="(min-width:1200px)"
+                                srcset="./team-images/three_desc.jpg 1x, ./team-images/three@2x_desc.jpg 2x"
+                                type="image/jpg" />
+
+                            <source media=" (min-width:786px)"
+                                srcset="./team-images/three_lap.jpg 1x, ./team-images/three@2x_lap.jpg 2x"
+                                type="image/jpg" />
+
+                            <source media="(max-width:767px)"
+                                srcset="./team-images/three_tel.jpg 1x, ./team-images/three@2x_tel.jpg 2x"
+                                type="image/jpg" />
+
+                            <img src="./team-images/three_tel.jpg" alt="Николай Тарасов" width="450" height="460px" />
+                        </picture>
+
                         <div class="card-style">
                             <h3 class="name"> Николай Тарасов</h3>
                             <p class="job" lang="en">Marketing</p>
@@ -367,7 +417,24 @@
                         </div>
                     </li>
 
-                    <li class="company"><img class="members" src="./image/five.jpg" alt="Михаил Ермаков" width="270" />
+                    <li class="company">
+
+                        <picture>
+                            <source media="(min-width:1200px)"
+                                srcset="./team-images/four_desc.jpg 1x, ./team-images/four@2x_desc.jpg 2x"
+                                type="image/jpg" />
+
+                            <source media="(min-width:786px)"
+                                srcset="./team-images/four_lap.jpg 1x, ./team-images/four@2x_lap.jpg 2x"
+                                type="image/jpg" />
+
+                            <source media="(max-width:767px)"
+                                srcset="./team-images/four_tel.jpg 1x, ./team-images/four@2x_tel.jpg 2x"
+                                type="image/jpg" />
+                            <img src="./team-images/four_tel.jpg" alt="Михаил Ермаков" width="450" />
+                        </picture>
+
+
                         <div class="card-style">
                             <h3 class="name">Михаил Ермаков</h3>
                             <p class="job" lang="en">UI Designer</p>

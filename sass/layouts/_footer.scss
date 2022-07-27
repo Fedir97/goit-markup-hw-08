@@ -22,6 +22,10 @@ footer {
 .main-footer {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-right: 234px;
+    }
 }
 
 .main-address {
@@ -30,6 +34,12 @@ footer {
     @media screen and (min-width:480px) and (max-width:767px) {
         flex-direction: column;
     }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 .information {
@@ -45,6 +55,8 @@ footer {
         text-align: center;
         padding-bottom: 60px;
     }
+
+
 }
 
 .class-address-main {
@@ -111,6 +123,10 @@ footer {
     @media screen and (min-width:480px) and (max-width:767px) {
         text-align: center;
     }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        text-align: center;
+    }
 }
 
 .address-apps {
@@ -161,11 +177,21 @@ footer {
 /*Окно-для-рользователя*/
 
 .user-window {
-    margin-left: 93px;
-
     @media screen and (min-width:480px) and (max-width:767px) {
         text-align: center;
         margin-left: 0px;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        flex-wrap: wrap;
+        margin-top: 60px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-left: 93px;
+
     }
 }
 
@@ -183,11 +209,22 @@ footer {
 
 .input-list {
     margin-top: 20px;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        flex-direction: column;
+        display: flex;
+
+    }
 }
 
 .btn-form {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-left: 12px;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-left: 123px;
+        margin-top: 30px;
+    }
 }
 
 .icon-btn {
@@ -210,4 +247,11 @@ footer {
     @media screen and (min-width:480px) and (max-width:767px) {
         margin-bottom: 20px;
     }
+
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        width: 450px;
+    }
+
 }

@@ -1,18 +1,56 @@
 /*Герой*/
 
 .hero {
-    height: 600px;
     padding: 200px 0;
+
     text-align: center;
     background-color: var(--phone-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../image/background.jpg);
+        url(../image/background_tel.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    //Для ретины
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        & {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../image/background@2x_tel.jpg);
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../image/background_lap.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../image/background@2x_lap.jpg);
+            }
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../image/background.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../image/background@2x_desc.jpg);
+            }
+        }
+    }
 }
 
 .hero-title {
@@ -22,6 +60,25 @@
     text-transform: uppercase;
     color: white;
     margin-bottom: 40px;
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        font-size: 26px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+    }
+
+
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 40px;
+    }
+
 }
 
 .topic {
