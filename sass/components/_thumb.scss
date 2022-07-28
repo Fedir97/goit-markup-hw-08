@@ -35,7 +35,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 
-    @media screen and (min-width:480px) and (max-width:767px) {
+    @media screen and (max-width:767px) {
         text-align: center;
     }
 }
@@ -49,7 +49,7 @@
     letter-spacing: 0.03em;
     color: var(--mini-calor);
 
-    @media screen and (min-width:480px) {
+    @media screen and (max-width:1199px) {
         width: 100%;
     }
 }
