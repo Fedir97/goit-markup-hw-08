@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--type-color);
+    margin: 0;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+
+.page-header {
+    margin-top: 24px;
+    margin-bottom: 25px;
+
+}
+
+.page-head {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+
+    @media screen and (max-width:1199px) {}
+}
