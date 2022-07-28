@@ -214,18 +214,27 @@
                     <h2 class="work">Чем мы занимаемся</h2>
                     <ul class="photos list">
                         <li class="work-photos">
-                            <img srcset="./image/first.jpg 1px, ./image/first@2x_desc.jpg 2x " src="./image/first.jpg"
-                                alt="work image" width="370" />
+                            <picture>
+                                <source media="(min-width:1200px)"
+                                    srcset="./image/first.jpg 1x , ./image/first@2x_desc.jpg 2x" type="image/jpeg" />
+                                <img src="./image/first.jpg" alt="work image" width="370" />
+                            </picture>
                             <p class="photo-description">Десктопные приложения</p>
                         </li>
                         <li class="work-photos">
-                            <img srcset="./image/second.jpg 1x, ./image/second@2x_desc.jpg 2x" class="img"
-                                src="./image/second.jpg" alt="work image" width="370" />
+                            <picture>
+                                <source media="(min-width:1200px)"
+                                    srcset="./image/second.jpg 1x , ./image/second@2x_desc.jpg 2x" type="image/jpeg" />
+                                <img src="./image/second.jpg" alt="work image" width="370" />
+                            </picture>
                             <p class="photo-description ">Мобильные приложения</p>
                         </li>
                         <li class="work-photos">
-                            <img srcset="./image/third.jpg 1x./image/third@2x_desc.jpg 2x" src="./image/third.jpg"
-                                alt="work image" width="370" />
+                            <picture>
+                                <source media="(min-width:1200px)"
+                                    srcset="./image/third.jpg 1x , ./image/third@2x_desc.jpg 2x" type="image/jpeg" />
+                                <img src="./image/third.jpg" alt="work image" width="370" />
+                            </picture>
                             <p class="photo-description ">Дизайнерские решения</p>
                         </li>
                     </ul>
@@ -302,16 +311,16 @@
                         <picture>
                             <source media="(min-width:1200px)"
                                 srcset="./team-images/two_desc.jpg 1x, ./team-images/two@2x_desc.jpg 2x"
-                                type="image/jpg" />
+                                type="image/jpeg" />
 
                             <source media=" (min-width:786px)"
                                 srcset="./team-images/two_lap.jpg 1x, ./team-images/two@2x_lap.jpg 2x"
-                                type="image/jpg" />
+                                type="image/jpeg" />
 
                             <source media="(max-width:767px)"
                                 srcset="./team-images/two_tel.jpg 1x, ./team-images/two@2x_tel.jpg 2x"
-                                type="image/jpg" />
-                            <img srcset="" src="./team-images/two-tel.jpg" alt="Ольга Репина" width="450" />
+                                type="image/jpeg" />
+                            <img src="./team-images/two_tel.jpg" alt="Ольга Репина" width="450" height="460" />
                         </picture>
 
                         <div class="card-style">
@@ -371,7 +380,7 @@
                                 srcset="./team-images/three_tel.jpg 1x, ./team-images/three@2x_tel.jpg 2x"
                                 type="image/jpg" />
 
-                            <img src="./team-images/three_tel.jpg" alt="Николай Тарасов" width="450" height="460px" />
+                            <img src="./team-images/three_tel.jpg" alt="Николай Тарасов" width="450" height="460" />
                         </picture>
 
                         <div class="card-style">
